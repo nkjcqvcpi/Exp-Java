@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="309.0" prefWidth="500.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lei.houtong.exp.Controller">
+    <children>
+        <TabPane prefHeight="309.0" prefWidth="500.0" tabClosingPolicy="UNAVAILABLE">
+            <tabs>
+                <Tab text="学生信息">
+                    <content>
+                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                            <children>
+                                <TextField fx:id="stu_no" layoutX="64.0" layoutY="20.0" />
+                                <Label layoutX="14.0" layoutY="25.0" text="学号" />
+                                <Label layoutX="14.0" layoutY="65.0" text="姓名" />
+                                <TextField fx:id="stu_name" layoutX="64.0" layoutY="60.0" />
+                                <Label layoutX="14.0" layoutY="105.0" text="性别" />
+                                <TextField fx:id="stu_gender" layoutX="64.0" layoutY="100.0" />
+                                <Label layoutX="14.0" layoutY="141.0" text="身高" />
+                                <TextField fx:id="stu_height" layoutX="64.0" layoutY="136.0" />
+                                <Label layoutX="14.0" layoutY="181.0" text="年龄" />
+                                <TextField fx:id="stu_age" layoutX="64.0" layoutY="176.0" />
+                                <Label layoutX="14.0" layoutY="219.0" text="生源地" />
+                                <TextField fx:id="stu_source" layoutX="64.0" layoutY="214.0" />
+                                <TextField fx:id="stu_school" layoutX="312.0" layoutY="60.0" />
+                                <Label layoutX="252.0" layoutY="65.0" text="所在学校" />
+                                <Label layoutX="252.0" layoutY="105.0" text="专业" />
+                                <TextField fx:id="stu_major" layoutX="312.0" layoutY="100.0" />
+                                <TextField fx:id="stu_tutor" layoutX="312.0" layoutY="136.0" />
+                                <Label layoutX="252.0" layoutY="141.0" text="导师" />
+                                <Label layoutX="252.0" layoutY="181.0" text="课题" />
+                                <TextArea fx:id="stu_subject" layoutX="313.0" layoutY="179.0" prefHeight="70.0" prefWidth="160.0" />
+                                <Button fx:id="stu_save" layoutX="429.0" layoutY="20.0" mnemonicParsing="false" onMouseClicked="#onStuSaveButtonClick" text="保存" />
+                                <Button fx:id="stu_find" layoutX="313.0" layoutY="19.0" mnemonicParsing="false" onMouseClicked="#onStuFindButtonClick" text="查找" />
+                                <Label fx:id="stu_postgraduate" layoutX="250.0" layoutY="24.0" />
+                            </children>
+                        </AnchorPane>
+                    </content>
+                </Tab>
+                <Tab text="课程信息">
+                    <content>
+                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                            <children>
+                                <Label layoutX="14.0" layoutY="29.0" text="课程编号" />
+                                <Label layoutX="14.0" layoutY="69.0" text="课程名" />
+                                <Label layoutX="14.0" layoutY="109.0" text="平均分" />
+                                <Label layoutX="14.0" layoutY="149.0" text="最高分" />
+                                <Label layoutX="14.0" layoutY="189.0" text="最低分" />
+                                <Button fx:id="cou_find" layoutX="334.0" layoutY="90.0" mnemonicParsing="false" onMouseClicked="#onCouFindButtonClick" text="查找" />
+                                <Button fx:id="cou_save" layoutX="334.0" layoutY="50.0" mnemonicParsing="false" onMouseClicked="#onCouSaveButtonClick" text="保存" />
+                                <TextField fx:id="cou_id" layoutX="80.0" layoutY="24.0" />
+                                <TextField fx:id="cou_name" layoutX="80.0" layoutY="64.0" />
+                        <Label fx:id="cou_avg" layoutX="141.0" layoutY="109.0" />
+                        <Label fx:id="cou_max" layoutX="141.0" layoutY="149.0" />
+                        <Label fx:id="cou_min" layoutX="141.0" layoutY="189.0" />
+                            </children>
+                        </AnchorPane>
+                    </content>
+                </Tab>
+                <Tab text="选课成绩">
+                    <content>
+                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                            <children>
+                                <Label layoutX="14.0" layoutY="29.0" text="学号" />
+                                <TextField fx:id="ele_no" layoutX="80.0" layoutY="24.0" />
+                                <TextField fx:id="ele_id" layoutX="80.0" layoutY="64.0" />
+                                <Label layoutX="14.0" layoutY="69.0" text="课程编号" />
+                                <TextField fx:id="ele_score" layoutX="80.0" layoutY="104.0" />
+                                <Label layoutX="14.0" layoutY="109.0" text="成绩" />
+                                <Button fx:id="ele_save" layoutX="421.0" layoutY="104.0" mnemonicParsing="false" onMouseClicked="#onEleSaveButtonClick" text="保存" />
+                                <Button fx:id="ele_find" layoutX="341.0" layoutY="104.0" mnemonicParsing="false" onMouseClicked="#onEleFindButtonClick" text="查找" />
+                                <TextField fx:id="ele_name" layoutX="304.0" layoutY="24.0" />
+                                <Label layoutX="260.0" layoutY="29.0" text="姓名" />
+                            </children>
+                        </AnchorPane>
+                    </content>
+                </Tab>
+            </tabs>
+        </TabPane>
+    </children>
+</VBox>
